@@ -13,7 +13,6 @@ from google.oauth2 import service_account
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import streamlit  as st
-from streamlit_option_menu import option_menu
 import base64
 import csv
 import plotly.graph_objs as go
@@ -25,6 +24,7 @@ from st_aggrid import AgGrid
 
 import streamlit.components.v1 as html
 from collections import deque
+from streamlit_option_menu import option_menu
                 
 
 def get_processing_dfs():
