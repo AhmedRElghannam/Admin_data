@@ -22,7 +22,7 @@ from sjvisualizer import DataHandler , Canvas ,BarRace
 from raceplotly.plots import barplot
 from  PIL import Image
 from st_aggrid import AgGrid
-from streamlit_option_menu import option_menu
+
 import streamlit.components.v1 as html
 from collections import deque
                 
