@@ -18,8 +18,6 @@ from streamlit_option_menu import option_menu
 import base64
 import csv
 import plotly.graph_objs as go
-from sjvisualizer import DataHandler , Canvas ,BarRace
-
 from raceplotly.plots import barplot
 from  PIL import Image
 from st_aggrid import AgGrid
