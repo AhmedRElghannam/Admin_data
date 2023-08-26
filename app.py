@@ -493,11 +493,11 @@ if selected_menu == 'Claim' :
 
             st.dataframe(Claim_Review)
 
-            New_Claims,pending_AR_Claims,AR_Rejected_Claims,Pending_Payable_Claims,Pending_Treasurment_Claims,Close_Today_Claims,Close_yesterDay_Claims = st.tabs([
-                "New","pending AR", "AR Rejected",
-                "Pending Payable",'Pending Treasurment',
+            New_Claims, pending_AR_Claims, AR_Rejected_Claims, Pending_Payable_Claims, Pending_Treasurment_Claims, Close_Today_Claims, Close_yesterDay_Claims = st.tabs([
+                "New", "pending AR", "AR Rejected",
+                "Pending Payable", 'Pending Treasurment',
                 'Close Today', 'Close yesterDay'
-                ])
+            ])
             
             New_Claims.dataframe(New)
             pending_AR_Claims.dataframe(pending_AR)
