@@ -16,7 +16,6 @@ import streamlit  as st
 import base64
 import csv
 import plotly.graph_objs as go
-from sjvisualizer import DataHandler , Canvas ,BarRace
 
 from raceplotly.plots import barplot
 from  PIL import Image
