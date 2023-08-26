@@ -321,7 +321,7 @@ if selected_menu == 'Achevment' :
                         #st.dataframe(achievement_per_account_df)
                     #with All_Achevment_coulmuns[1]:
                     raceplot = barplot(animation_achevment_df,  item_column="Acount", value_column="Amount", time_column="Date")
-                    fig = raceplot.plot(item_label='All_Achevment', value_label="EGP", frame_duration=800, date_format='%Y-%m-%d', orientation='horizontal')
+                    fig=raceplot.plot(item_label = "All_Achevment", value_label = "EGP", frame_duration = 800 , date_format='%Y-%m-%d',orientation='horizontal')
                     fig.update_layout(
                     title='opration',
                     autosize=False,
@@ -494,15 +494,11 @@ if selected_menu == 'Claim' :
             st.dataframe(Claim_Review)
 
             New_Claims,pending_AR_Claims,AR_Rejected_Claims,Pending_Payable_Claims,Pending_Treasurment_Claims,Close_Today_Claims,Close_yesterDay_Claims = st.tabs([
-                {"label": "New", "content": New_Claims},
-                {"label": "pending AR", "content": pending_AR_Claims},
-                {"label": "AR Rejected", "content": AR_Rejected_Claims},
-                {"label": "Pending Payable", "content": Pending_Payable_Claims},
-                {"label": "Pending Treasurment", "content": Pending_Treasurment_Claims},
-                {"label": "Close Today", "content": Close_Today_Claims},
-                {"label": "Close yesterDay", "content": Close_yesterDay_Claims},
-            ])
-
+                "New","pending AR", "AR Rejected",
+                "Pending Payable",'Pending Treasurment',
+                'Close Today', 'Close yesterDay'
+                ])
+            
             New_Claims.dataframe(New)
             pending_AR_Claims.dataframe(pending_AR)
             AR_Rejected_Claims.dataframe(AR_Rejected)
