@@ -270,10 +270,10 @@ if selected_menu == 'Achevment' :
 
                 # Update table data in worksheet
                 All_Achevment['Date'] = All_Achevment['Date'].apply(lambda x: x.strftime('%Y-%m-%d %H:%M:%S'))
-                All_Achevmentsheet.update([All_Achevment.columns.values.tolist()] + All_Achevment.values.tolist())
                 per_accountsheet.update([achievement_per_account_df.columns.values.tolist()] + achievement_per_account_df.values.tolist())
                 per_per_teamleader.update([achievement_per_team_leader_df.columns.values.tolist()] + achievement_per_team_leader_df.values.tolist())
-                
+                All_Achevmentsheet.update([All_Achevment.columns.values.tolist()] + All_Achevment.values.tolist())
+
                 st.success("Data upladed To DashBoard")
                 st.write('[manger DashBoard](https://lookerstudio.google.com/reporting/c7577406-f6ca-4bbb-885b-28ec59ded08e/page/IECLD)')
                 st.write('[Leader DashBoard](https://lookerstudio.google.com/reporting/2c97d361-2d2d-4b4f-81bc-8d0691736381)')
