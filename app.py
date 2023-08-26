@@ -321,7 +321,7 @@ if selected_menu == 'Achevment' :
                         #st.dataframe(achievement_per_account_df)
                     #with All_Achevment_coulmuns[1]:
                     raceplot = barplot(animation_achevment_df,  item_column="Acount", value_column="Amount", time_column="Date")
-                    fig=raceplot.plot(item_label = "All_Achevment", value_label = "EGP", frame_duration = 800 , date_format='%Y-%m-%d',orientation='horizontal')
+                    fig = raceplot.plot(item_label=str("All_Achevment"), value_label="EGP", frame_duration=800, date_format='%Y-%m-%d', orientation='horizontal')
                     fig.update_layout(
                     title='opration',
                     autosize=False,
