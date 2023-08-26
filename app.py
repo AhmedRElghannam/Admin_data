@@ -313,24 +313,7 @@ if selected_menu == 'Achevment' :
                     href = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="All_Achevment.xlsx"> Export as Excel file </a>'
                     st.markdown(href, unsafe_allow_html=True)
                     st.write('---')
-                with st.container():
-                    st.subheader('achievement per account Table')
-                    st.write('##')
-                    #All_Achevment_coulmuns = st.columns((1,2))
-                    #with All_Achevment_coulmuns[0]:
-                        #st.dataframe(achievement_per_account_df)
-                    #with All_Achevment_coulmuns[1]:
-                    raceplot = barplot(animation_achevment_df,  item_column="Acount", value_column="Amount", time_column="Date")
-                    fig=raceplot.plot(item_label = "All_Achevment", value_label = "EGP", frame_duration = 800 , date_format='%Y-%m-%d',orientation='horizontal')
-                    fig.update_layout(
-                    title='opration',
-                    autosize=False,
-                    width=1000,
-                    height=500  ,
-                    paper_bgcolor="lightgray"
-                    )
-                    st.plotly_chart(fig)
-                    
+                
         
                     
                 st.write('---')
