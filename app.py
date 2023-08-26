@@ -19,7 +19,6 @@ import plotly.graph_objs as go
 
 from raceplotly.plots import barplot
 from  PIL import Image
-from st_aggrid import AgGrid
 
 import streamlit.components.v1 as html
 from collections import deque
