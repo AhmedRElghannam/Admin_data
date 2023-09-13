@@ -282,7 +282,7 @@ if selected_menu == 'Achevment' :
                 #Display on app 
 
                 with st.container():
-                    
+                    All_Achevment['Transaction Number'] = All_Achevment['Transaction Number'].astype(str)
                     st.subheader('All Active Transaction')
                     
                     
@@ -327,7 +327,7 @@ if selected_menu == 'Achevment' :
                         autosize=False,
                         width=1000,
                         height=500  ,
-                        paper_bgcolor="lightgray"
+                        paper_bgcolor="lightgray"   
                         )
                         st.plotly_chart(fig)
             
@@ -463,7 +463,7 @@ if selected_menu == 'Claim' :
                 pros_claim['Net_Claim_Amount'].fillna(0, inplace=True)
                 pros_claim = pros_claim[['Claim_id','Net_Claim_Amount','ClaimStatus_Name','Store_Name','Claim_CreatedBy','Claim_CreatedDate','Claim_ModifiedDate','Team_leader','close_SLA','Modifai_SLA','Create_SLA']]
                 pros_claim['Net_Claim_Amount'] = pd.to_numeric(pros_claim['Net_Claim_Amount'], errors='coerce').dropna().astype(int)
-
+            pros_claim['Claim_id'] = pros_claim['Claim_id'].astype(str)
             ## Filter data by claim status
             pending_AR = pros_claim[pros_claim['ClaimStatus_Name']=='Pending  Ar']
             AR_Rejected = pros_claim[pros_claim['ClaimStatus_Name']=='AR Rejected']
@@ -492,10 +492,10 @@ if selected_menu == 'Claim' :
 
             st.dataframe(Claim_Review)
 
-            New_Claims, pending_AR_Claims, AR_Rejected_Claims, Pending_Payable_Claims, Pending_Treasurment_Claims, Close_Today_Claims, Close_yesterDay_Claims = st.tabs([
+            New_Claims, pending_AR_Claims, AR_Rejected_Claims, Pending_Payable_Claims, Pending_Treasurment_Claims, Close_Today_Claims, Close_yesterDay_Claims,All_Claim = st.tabs([
                 "New", "pending AR", "AR Rejected",
                 "Pending Payable", 'Pending Treasurment',
-                'Close Today', 'Close yesterDay'
+                'Close Today', 'Close yesterDay', 'All Claim'
             ])
             
             New_Claims.dataframe(New)
@@ -505,7 +505,7 @@ if selected_menu == 'Claim' :
             Pending_Treasurment_Claims.dataframe(Pending_Treasurment)
             Close_Today_Claims.dataframe(Close_Today)
             Close_yesterDay_Claims.dataframe(Close_yesterDay)
-
+            All_Claim.dataframe(pros_claim)
             
             
            
