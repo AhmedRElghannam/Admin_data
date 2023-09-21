@@ -124,7 +124,7 @@ if selected_menu == 'Achevment' :
             Quarter_df['end_date'] = pd.to_datetime(Quarter_df['end_date'])
                         
             # Add team leader and **account manager** information
-            main_df.rename(columns = {'Store_Merchant1' : 'Acount'}, inplace = True)
+            main_df.rename(columns = {'Store_Merchants1' : 'Acount'}, inplace = True)
             App_df.rename(columns = {'DS_Name' : 'Acount'}, inplace = True)
             proccessing_data = pd.merge(main_df,merchent_list)
             App_df = pd.merge(App_df,merchent_list)
