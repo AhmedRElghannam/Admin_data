@@ -349,6 +349,14 @@ if selected_menu == 'Achevment' :
                     st.write('##')
                     st.dataframe(yesterday_team)
                 st.write('---')
+               Today_Achevment = All_Achevment[(All_Achevment['Date']<(yesterday)) & (All_Achevment['Date']>(Today))].copy()
+                Today_team = Today_Achevment.groupby(['Team_leader'])[['Amount']].sum()
+                Tod_Achevment = Today_Achevment['Amount'].sum()
+                with st.container():
+                    st.subheader(f'Today Achevment : {yest_Achevment}' )
+                    st.write('##')
+                    st.dataframe(Today_team)
+                st.write('---')
 
             
 
