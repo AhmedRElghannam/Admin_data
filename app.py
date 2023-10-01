@@ -350,7 +350,7 @@ if selected_menu == 'Achevment' :
                     st.dataframe(yesterday_team)
                 st.write('---')
                 Today_Achevment = All_Achevment[(All_Achevment['Date']>(yesterday))].copy()
-                Today_team = Today_Achevment.groupby(['Team_leader'])[['Amount']].sum()
+                Today_team = Today_Achevment.groupby(['Acount'])[['Amount']].sum()
                 Tod_Achevment = Today_Achevment['Amount'].sum()
                 with st.container():
                     st.subheader(f'Today Achevment : {Tod_Achevment}' )
