@@ -11,7 +11,7 @@
 
 ## 📈 Step 1: Data Analysis
 **Objective**: Identify the key questions that the dashboards need to answer.  
-**Action**: Data was analyzed using Jupyter and Python with various libraries. [View the code here](#).
+**Action**: Data was analyzed using Jupyter and Python with various libraries. [View the code here](https://github.com/AhmedRElghannam/Admin_data).
 
 ---
 
@@ -35,15 +35,15 @@
 
 ## ✅ Step 5: Testing Streamlit Code on the Local Server and Creating the Requirements File
 **Objective**: Test the code and ensure it runs on the server.  
-**Action**: The code was successfully tested, and [you can view the source code on GitHub](#). A requirements file was created and the app was deployed on the free Streamlit server for practical use.
+**Action**: The code was successfully tested, and [you can view the source code on GitHub](https://github.com/AhmedRElghannam/Admin_data). A requirements file was created and the app was deployed on the free Streamlit server for practical use.
 
 ---
 
 ## 🔗 Useful Links:
-- **Manager's Dashboard**: [Google Looker Studio](#)
-- **Team Leaders' Dashboard**: [Google Looker Studio](#)
-- **GitHub Repository**: [GitHub](#)
-- **Data Administrator's Control Panel**: [Streamlit App](#)
+- **Manager's Dashboard**: [Google Looker Studio](https://lookerstudio.google.com/reporting/c7577406-f6ca-4bbb-885b-28ec59ded08e/page/IECLD)
+- **Team Leaders' Dashboard**: [Google Looker Studio](https://lookerstudio.google.com/reporting/2c97d361-2d2d-4b4f-81bc-8d0691736381/page/p_gjgphv565c)
+- **GitHub Repository**: [GitHub](https://github.com/AhmedRElghannam/Admin_data)
+- **Data Administrator's Control Panel**: [Streamlit App](https://elghannam.streamlit.app/)
 
 ---
 
